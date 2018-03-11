@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>SCRUM-Wiki</title>
+
+		<link rel="shortcut icon" href="/images/logo.png">
+		<link rel="stylesheet" href="/styles/articles.css">
+		<link rel="stylesheet" media="screen" href="https://fontlibrary.org/face/linux-libertine" type="text/css"/>
+
+		<script type="text/javascript">
+		var zuletztGeändert = new Date(document.lastModified);
+		var jahr = zuletztGeändert.getFullYear();
+		var monat = zuletztGeändert.getMonth()+1;
+		var tag = zuletztGeändert.getDate();
+		var stunde = zuletztGeändert.getHours();
+		var minute = zuletztGeändert.getMinutes();
+
+		function zufälligeSeiteÖffnen(){
+			var seiten = ["/articles/sprint_planning.html", "/articles/development_team.html", "/articles/sprint.html", "/articles/product_owner.html", "/articles/scrum_master.html", "/articles/product_backlog.html", "/articles/sprint_backlog.html", "/articles/daily_scrum.html", "/articles/sprint_review.html", "/articles/sprint_retrospective.html", "/articles/komplette_erklärung.html"];
+
+			var zufall = parseInt((Math.random()*100)%11);
+			window.open(seiten[zufall], "_self");
+		}
+
+		</script>
+
+	</head>
+	<body>
+		<header>
+			<div class="googleSuche">
+  #GSPlaceholder
+</div>
+		</header>
+
+		<nav>
+			<img src="/images/logo.png" alt="SCRUM Logo" height="100px" width="100px">
+
+			<h1>SCRUM-Wiki</h1>
+
+			<ul>
+			  <li><a href="/index.html">Startseite</a></li>
+			  <li><a href="/special/übersicht.html">Übersicht</a></li>
+			  <li><a href="/articles/komplette_erklärung.html">Hervorgehobener Artikel</a></li>
+			  <li><a href="javascript:zufälligeSeiteÖffnen()">Zufälliger Artikel</a></li>
+			</ul>
+
+			Info
+			<hr>
+			<ul>
+			  <li><a href="/special/about.html">Über dieses Wiki</a></li>
+			  <li><a href="/special/textquellen.html">Textquellen</a></li>
+			  <li><a href="/special/bildquellen.html">Bilderquellen</a></li>
+			</ul>
+
+			Sprachen
+			<hr>
+			<ul>
+				<li><a href="/index.html">Deutsch</a></li>
+				<li><a href="/index_EN.html">English</a></li>
+			</ul>
+		</nav>
+
+		<main>
+			<h1>Scrum Master</h1><hr>
+
+			<p>Der <b>Scrum Master</b> ist eine Person außerhalb des <a href="/articles/development_team.html">Entwicklerteams</a> und unterstützt dieses indem er Ablenkungen und Probleme aus dem Weg schafft. Um dies zu Erreichen hat er folgende Aufgaben:</p>
+
+			<ul>
+				<li>Kommunikation zwischen Team und <a href="/articles/product_owner.html">Product Owner</a></li>
+				<li>Organisieren von Lösungsansätzen</li>
+				<li>Organisiert Ressourcen (Personal, Logistik, Kaffee)</li>
+				<li>Repräsentiert das Entwicklerteam bei Treffen</li>
+				<li>Moderation des <a href="/articles/daily_scrum.html">Daily Scrum</a> </li>
+				<li>Strebt Nutzenmaximierung und Optimierung an</li>
+				<li>Löst Konflikte innerhalb des Teams</li>
+			</ul>
+
+			<p>Neben diesen Punkten ist er auch für die Motivation des Teams zuständig die auch durch <a href="/articles/sprint_planning.html">Sprint Planning</a>, die <a href="/articles/daily_scrum.html">Daily Scrums</a>, den <a href="/articles/sprint_review.html">Sprint-Review</a> und die <a href="/articles/sprint_retrospective.html">Sprint-Retrospektive</a> erreicht wird.</p>
+
+			<h2>Quellen</h2><hr>
+			<ol class="references">
+				<li><a href="https://de.atlassian.com/agile/scrum">Atlassian - Scrum | Eine kurze Einführung</a></li>
+				<li><a href="https://www.inloox.de/unternehmen/blog/artikel/scrum-so-finden-sie-einen-exzellenten-scrum-master/">Inloox - So finden Sie einen exzellenten Scrum-Master</a></li>
+			</ol>
+
+			<div class="categories">
+				<a href="/special/übersicht.html">Kategorien</a>: <a href="/special/übersicht.html#personen">Personen</a>
+
+
+			</div>
+		</main>
+
+		<footer>
+			<script type="text/javascript">
+			document.write("Zuletzt editiert am "+tag+"."+monat+"."+jahr+" um "+stunde+":"+minute);
+			</script>
+			<p>Ein Wiki von: Benjamin Brandtner, Ferdinand Baudach, Philip Hägerich</p>
+		</footer>
+
+	</body>
+</html>

@@ -1,0 +1,147 @@
+﻿html{
+	height: 100vh;
+	background-color:  rgb(246, 246, 246);
+	background-image: linear-gradient(rgb(255, 255, 255), rgb(246, 246, 246) 80px);
+	background-repeat: no-repeat;
+}
+
+body{
+	display:grid;
+	grid-template-columns: 200px; /* Nav bekommt 200px, Header/Main/Footer bekommen horizontal den Rest der Seite*/
+	grid-template-rows: 30px 100% 40px;
+
+	grid-template-areas:
+		"nav header"
+		"nav main"
+		"nav footer"
+	;
+}
+
+header{
+	grid-area: header;
+}
+
+div.googleSuche{
+	float: right;
+	width: 350px;
+}
+
+nav{
+	grid-area: nav;
+}
+
+main{
+	grid-area: main;
+
+	padding:10px;
+	border:1px solid rgb(59, 202, 255);
+
+	background-color: rgb(255, 255, 255);
+}
+
+.categories{
+	border: 1px solid rgb(145, 145, 145);
+	padding: 5px;
+	background-color: rgb(248, 249, 250);
+}
+
+footer{
+	grid-area: footer;
+
+	font-size: small;
+	margin-top: 10px;
+}
+
+/*Details, damit es ähnlich wie Wikipedia aussieht:*/
+hr{
+	margin-top: 0;
+}
+h1, h2{
+	margin-bottom: 0;
+}
+a{
+	text-decoration: none;
+}
+
+nav hr{
+	border: 0;
+	height: 1px;
+	background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.55), rgba(0, 0, 0, 0));
+}
+nav ul{
+	list-style-type: none;
+	padding-left: 25px;
+}
+nav h1{
+	margin-top: 10px;
+	font-family: 'LinuxLibertineORegular';
+	font-size: xx-large;
+	font-weight: normal;
+}
+
+/*navigationsbereich verstecken*/
+
+@media screen and (max-width:600px){
+
+	body{
+		grid-template-columns: 80px;
+		grid-template-areas:
+		"nav header"
+		"main main"
+		"footer footer"
+	;
+	}
+
+div.googleSuche{
+	float: right;
+	width: 100%; /*else it moves to the right, adding a scrollbar*/
+	max-width: 350px;
+}
+
+	main, footer{
+		z-index: 20;
+	}
+
+
+	nav{
+		max-width: 38px;
+		max-height: 30px;
+
+		overflow: hidden;
+		font-size: 0px;
+
+		position: absolute;
+		z-index: 10;
+
+		transition: max-height 500ms ease-in;
+	}
+	nav:hover{
+		font-size: medium;
+		padding: 10px;
+		max-width: 200px;
+		max-height: 100%;
+
+		z-index: 30;
+
+		background-color:  rgb(246, 246, 246);
+		border: 1px solid black;
+	}
+
+	nav::before{
+		content: ". . .";
+		display: block;
+		width: 28px;
+		padding: 0 4px 10px 4px;
+
+		font-size: 20px;
+		font-weight: bold;
+		color: rgb(59, 202, 255);
+
+		background-color: rgba(59, 202, 255, 0.06);
+		border: 1px solid rgb(59, 202, 255);
+	}
+	nav:hover::before{
+		content: none;
+	}
+
+}

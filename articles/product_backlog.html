@@ -1,0 +1,103 @@
+
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>SCRUM-Wiki</title>
+
+		<link rel="shortcut icon" href="/images/logo.png">
+		<link rel="stylesheet" href="/styles/articles.css">
+		<link rel="stylesheet" media="screen" href="https://fontlibrary.org/face/linux-libertine" type="text/css"/>
+
+		<script type="text/javascript">
+		var zuletztGeändert = new Date(document.lastModified);
+		var jahr = zuletztGeändert.getFullYear();
+		var monat = zuletztGeändert.getMonth()+1;
+		var tag = zuletztGeändert.getDate();
+		var stunde = zuletztGeändert.getHours();
+		var minute = zuletztGeändert.getMinutes();
+
+		function zufälligeSeiteÖffnen(){
+			var seiten = ["/articles/sprint_planning.html", "/articles/development_team.html", "/articles/sprint.html", "/articles/product_owner.html", "/articles/scrum_master.html", "/articles/product_backlog.html", "/articles/sprint_backlog.html", "/articles/daily_scrum.html", "/articles/sprint_review.html", "/articles/sprint_retrospective.html", "/articles/komplette_erklärung.html"];
+
+			var zufall = parseInt((Math.random()*100)%11);
+			window.open(seiten[zufall], "_self");
+		}
+
+		</script>
+
+	</head>
+	<body>
+		<header>
+			<div class="googleSuche">
+  #GSPlaceholder
+</div>
+		</header>
+
+		<nav>
+			<img src="/images/logo.png" alt="SCRUM Logo" height="100px" width="100px">
+
+			<h1>SCRUM-Wiki</h1>
+
+			<ul>
+			  <li><a href="/index.html">Startseite</a></li>
+			  <li><a href="/special/übersicht.html">Übersicht</a></li>
+			  <li><a href="/articles/komplette_erklärung.html">Hervorgehobener Artikel</a></li>
+			  <li><a href="javascript:zufälligeSeiteÖffnen()">Zufälliger Artikel</a></li>
+			</ul>
+
+			Info
+			<hr>
+			<ul>
+			  <li><a href="/special/about.html">Über dieses Wiki</a></li>
+			  <li><a href="/special/textquellen.html">Textquellen</a></li>
+			  <li><a href="/special/bildquellen.html">Bilderquellen</a></li>
+			</ul>
+
+			Sprachen
+			<hr>
+			<ul>
+				<li><a href="/index.html">Deutsch</a></li>
+				<li><a href="/index_EN.html">English</a></li>
+			</ul>
+		</nav>
+
+		<main>
+<h1 id="product-backlog">Product Backlog</h1><hr>
+<p>Der Begriff Backlog steht für Arbeit, die sich während einer bestimmten Zeit angesammelt hat und abgearbeitet werden muss. Beim Scrum enthält der <strong>Product Backlog</strong> alle Anforderungen an das Produkt, also Funktionalität die das Endprodukt haben muss, und alle bis zum Endprodukt zu verrichtenden Arbeiten.
+Im Gegensatz zum Lasten-Pflichten Heft bei der klassischen Softwarentwicklung hingegen, wird der Product Backlog kontinuierlich vom <a href="/articles/product_owner.html">Product Owner</a> weiterentwickelt. Während der gesamten Laufzeit des Projektes wird er gepflegt, und die Anforderungen nach und nach in <a href="/articles/sprint.html">Sprints</a> bearbeitet.</p>
+<h2 id="items-im-product-backlog">Items im Product Backlog</h2><hr>
+<p>Jedes Item (engl: Eintrag) des Product Backlogs hat eine Beschreibung, eine Priorität, eine Aufwandsschätzung und eine Wertangabe, also wieviel Nutzen das Item für den Kunden hat. Die Genauigkeit einer Beschreibung nimmt standardmäßig zu, je höher seine Priorität ist, also je näher das Items an die Bearbeitung kommt.
+Typische Product Backlog Items sind:</p>
+<ul>
+<li>Anforderungen an Qualität</li>
+<li>Anforderungen an Funktionen</li>
+<li>Zu behebende Bugs</li>
+<li>Verbesserungen</li>
+<li>User Stories (kurze Beschreibung der gewünschten Funktionalität aus Sicht der User)</li>
+<li>Technische Arbeit</li>
+<li>Wissensbeschaffung</li>
+</ul>
+<p>Beim <a href="/articles/sprint_planning.html">Sprint Planning</a> werden die zu dem Zeitpunkt wichtigstens Items aus dem Product Backlog besprochen und vom <a href="/articles/development_team.html">Development Team</a> in den Sprint Backlog übernommen. Items die während des Sprints nicht erfüllt wurden, werden wieder in den Product Backlog aufgenommen.</p>
+<h2 id="quellen">Quellen</h2><hr>
+<ol>
+<li><a href="http://www.mountaingoatsoftware.com/agile/scrum/scrum-tools/product-backlog">MountaingoatSoftware - Product Backlog</a></li>
+<li><a href="https://www.scrum-institute.org/The_Scrum_Product_Backlog.php">Scrum-Institute - The Scrum Product Backlog</a></li>
+</ol>
+
+			<div class="categories">
+				<a href="/special/übersicht.html">Kategorien</a>: <a href="/special/übersicht.html#dokumente">Dokumente</a>
+
+
+			</div>
+		</main>
+
+		<footer>
+			<script type="text/javascript">
+			document.write("Zuletzt editiert am "+tag+"."+monat+"."+jahr+" um "+stunde+":"+minute);
+			</script>
+			<p>Ein Wiki von: Benjamin Brandtner, Ferdinand Baudach, Philip Hägerich</p>
+		</footer>
+
+	</body>
+</html>

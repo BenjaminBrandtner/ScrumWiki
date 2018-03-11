@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>SCRUM-Wiki</title>
+
+		<link rel="shortcut icon" href="/images/logo.png">
+		<link rel="stylesheet" href="/styles/articles.css">
+		<link rel="stylesheet" href="/styles/index.css">
+		<link rel="stylesheet" media="screen" href="https://fontlibrary.org/face/linux-libertine" type="text/css"/>
+
+		<script type="text/javascript">
+		var zuletztGeändert = new Date(document.lastModified);
+		var jahr = zuletztGeändert.getFullYear();
+		var monat = zuletztGeändert.getMonth()+1;
+		var tag = zuletztGeändert.getDate();
+		var stunde = zuletztGeändert.getHours();
+		var minute = zuletztGeändert.getMinutes();
+
+		function zufälligeSeiteÖffnen(){
+			var seiten = ["/articles/sprint_planning.html", "/articles/development_team.html", "/articles/sprint.html", "/articles/product_owner.html", "/articles/scrum_master.html", "/articles/product_backlog.html", "/articles/sprint_backlog.html", "/articles/daily_scrum.html", "/articles/sprint_review.html", "/articles/sprint_retrospective.html", "/articles/komplette_erklärung.html"];
+
+			var zufall = parseInt((Math.random()*100)%11);
+			window.open(seiten[zufall], "_self");
+		}
+
+		</script>
+
+	</head>
+	<body>
+		<header>
+			<div class="googleSuche">
+  #GSPlaceholder
+</div>
+		</header>
+
+		<nav>
+			<img src="/images/logo.png" alt="SCRUM Logo" height="100px" width="100px">
+
+			<h1>SCRUM-Wiki</h1>
+
+			<ul>
+			  <li><a href="/index.html">Startseite</a></li>
+			  <li><a href="/special/übersicht.html">Übersicht</a></li>
+			  <li><a href="/articles/komplette_erklärung.html">Hervorgehobener Artikel</a></li>
+			  <li><a href="javascript:zufälligeSeiteÖffnen()">Zufälliger Artikel</a></li>
+			</ul>
+
+			Info
+			<hr>
+			<ul>
+			  <li><a href="/special/about.html">Über dieses Wiki</a></li>
+			  <li><a href="/special/textquellen.html">Textquellen</a></li>
+			  <li><a href="/special/bildquellen.html">Bilderquellen</a></li>
+			</ul>
+
+
+			Sprachen
+			<hr>
+			<ul>
+				<li><a href="/index.html">Deutsch</a></li>
+				<li><a href="/index_EN.html">English</a></li>
+			</ul>
+		</nav>
+
+		<main>
+			<h1>SCRUM</h1>
+			<p id="zitat">"Ein Rahmenwerk, innerhalb dessen Menschen komplexe adaptive Aufgabenstellungen angehen können, und durch das sie in die Lage versetzt werden, produktiv und kreativ Produkte mit dem höchstmöglichen Wert auszuliefern."</p>
+			<p id="zitatsprecher">(Schwaber, Ken; Sutherland, Jeff: Der Scrum Guide, November 2017, <a href="http://www.scrumguides.org">www.scrumguides.org</a>)</p>
+
+
+			<h2>Willkommen!</h2>
+			<p>
+			Dieses Wiki vermittelt grundlegende Informationen der agilen Softwareentwicklungsmethode <b>SCRUM</b>.<br>
+			Zum Start empfehlen wir die <a href="/special/übersicht.html">Übersicht aller Artikel</a> oder die <a href="/articles/komplette_erklärung.html">Gesamterklärung des Scrum-Zyklus</a>.
+		</p>
+		</main>
+
+		<footer>
+			<script type="text/javascript">
+			document.write("Zuletzt editiert am "+tag+"."+monat+"."+jahr+" um "+stunde+":"+minute);
+			</script>
+			<p>Ein Wiki von: Benjamin Brandtner, Ferdinand Baudach, Philip Hägerich</p>
+		</footer>
+
+	</body>
+</html>
