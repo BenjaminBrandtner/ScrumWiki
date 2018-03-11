@@ -4,9 +4,9 @@
 		<meta charset="utf-8">
 		<title>SCRUM-Wiki</title>
 
-		<link rel="shortcut icon" href="/images/logo.png">
-		<link rel="stylesheet" href="/styles/articles.css">
-		<link rel="stylesheet" media="screen" href="https://fontlibrary.org/face/linux-libertine" type="text/css"/>
+		<link rel="shortcut icon" href="images/logo.png">
+		<link rel="stylesheet" href="styles/articles.css">
+		<link rel="stylesheet" media="screen" href="https://fontlibrary.org/face/linux-libertine" type="text/css">
 
 		<style>
 			#ablaufbild{
@@ -23,7 +23,7 @@
 		var minute = zuletztGeändert.getMinutes();
 
 		function zufälligeSeiteÖffnen(){
-			var seiten = ["/articles/sprint_planning.html", "/articles/development_team.html", "/articles/sprint.html", "/articles/product_owner.html", "/articles/scrum_master.html", "/articles/product_backlog.html", "/articles/sprint_backlog.html", "/articles/daily_scrum.html", "/articles/sprint_review.html", "/articles/sprint_retrospective.html", "/articles/komplette_erklärung.html"];
+			var seiten = ["articles/sprint_planning.html", "articles/development_team.html", "articles/sprint.html", "articles/product_owner.html", "articles/scrum_master.html", "articles/product_backlog.html", "articles/sprint_backlog.html", "articles/daily_scrum.html", "articles/sprint_review.html", "articles/sprint_retrospective.html", "articles/komplette_erklärung.html"];
 
 			var zufall = parseInt((Math.random()*100)%11);
 			window.open(seiten[zufall], "_self");
@@ -40,30 +40,30 @@
 		</header>
 
 		<nav>
-			<img src="/images/logo.png" alt="SCRUM Logo" height="100px" width="100px">
+			<img src="images/logo.png" alt="SCRUM Logo" height="100px" width="100px">
 
 			<h1>SCRUM-Wiki</h1>
 
 			<ul>
-			  <li><a href="/index.html">Startseite</a></li>
-			  <li><a href="/special/übersicht.html">Übersicht</a></li>
-			  <li><a href="/articles/komplette_erklärung.html">Hervorgehobener Artikel</a></li>
+			  <li><a href="index.html">Startseite</a></li>
+			  <li><a href="special/übersicht.html">Übersicht</a></li>
+			  <li><a href="articles/komplette_erklärung.html">Hervorgehobener Artikel</a></li>
 			  <li><a href="javascript:zufälligeSeiteÖffnen()">Zufälliger Artikel</a></li>
 			</ul>
 
 			Info
 			<hr>
 			<ul>
-			  <li><a href="/special/about.html">Über dieses Wiki</a></li>
-			  <li><a href="/special/textquellen.html">Textquellen</a></li>
-			  <li><a href="/special/bildquellen.html">Bilderquellen</a></li>
+			  <li><a href="special/about.html">Über dieses Wiki</a></li>
+			  <li><a href="special/textquellen.html">Textquellen</a></li>
+			  <li><a href="special/bildquellen.html">Bilderquellen</a></li>
 			</ul>
 
 			Sprachen
 			<hr>
 			<ul>
-				<li><a href="/index.html">Deutsch</a></li>
-				<li><a href="/index_EN.html">English</a></li>
+				<li><a href="index.html">Deutsch</a></li>
+				<li><a href="index_EN.html">English</a></li>
 			</ul>
 		</nav>
 
@@ -72,16 +72,16 @@
 <p>Das <strong>Scrum</strong> (engl: Gedränge) ist eine agile Methode der Softwareentwicklung, sowie des allgemeineren Projektmanagements. Ausgehend von der Annahme, dass große Projekte zu umfänglich sind, um sie vor Beginn der Arbeit in einem starren Entwicklungsplan zu organisieren, setzt das Scrum auf <em>inkrementelle</em> (d.h. aufeinander aufbauend) und <em>iterative</em> (sich ständig wiederholende) Planung und Entwicklung.
 Die Regeln des SCRUM sind übersichtlich und recht simpel gehalten, um bei der Umsetzung einen großen Spielraum zu lassen. Jede komplette Scrum-Runde führt zu einem <em>increment of potentially shippable product</em>, also einem Produktinkrement, dass in der Funktionalität weiterentwickelt ist und von der Qualität her gut genug wäre, um es an den Kunden auszuliefern. Der Ablauf so einer Runde soll im Folgenden grob erklärt werden:</p>
 <ul>
-<li>Der <a href="/articles/product_owner.html">Product Owner</a> erstellt, bearbeitet und priorisiert den Inhalt des <a href="/articles/product_backlog.html">Product Backlogs</a>.</li>
-<li>Der Entwicklungszyklus, gennant <a href="/articles/sprint.html">Sprint</a>, wird eingeleitet durch das <a href="/articles/sprint_planning.html">Sprint Planning</a>, ein Meeting in dem das <a href="/articles/development_team.html">Entwicklerteam</a> und der Product Owner entscheiden, welche Aufgaben aus dem Product Backlog in den <a href="/articles/sprint_backlog.html">Sprint Backlog</a> aufgenommen werden sollen, also im folgenden Sprint bearbeitet werden sollen.</li>
+<li>Der <a href="articles/product_owner.html">Product Owner</a> erstellt, bearbeitet und priorisiert den Inhalt des <a href="articles/product_backlog.html">Product Backlogs</a>.</li>
+<li>Der Entwicklungszyklus, gennant <a href="articles/sprint.html">Sprint</a>, wird eingeleitet durch das <a href="articles/sprint_planning.html">Sprint Planning</a>, ein Meeting in dem das <a href="articles/development_team.html">Entwicklerteam</a> und der Product Owner entscheiden, welche Aufgaben aus dem Product Backlog in den <a href="articles/sprint_backlog.html">Sprint Backlog</a> aufgenommen werden sollen, also im folgenden Sprint bearbeitet werden sollen.</li>
 <li>Während dem Sprint, der typischerweise 1 bis 4 Wochen dauert, arbeitet das Entwicklerteam ungestört an der Erfüllung des Sprint Backlogs. Das Ergebnis des Sprints ist optimalerweise ein fertiges Produktinkrement.</li>
-<li>An jedem Werktag findet das <a href="/articles/daily_scrum.html">Daily Scrum</a> statt, ein höchstens 15 Minuten langes Meeting, in dem die Mitglieder des Teams besprechen, woran sie seit dem letzten Tag gearbeitet haben, welche Probleme es gibt, und was sie an diesem Tag bearbeiten werden.</li>
-<li>Der <a href="/articles/scrum_master.html">Scrum Master</a> arbeitet mit dem Entwicklungsteam zusammen, und ist dafür verantwortlich, dass der Scrum-Prozess reibungsfrei gelingt. Dazu überwacht er die Einhaltung der Regeln und beseitigt Probleme, wie mangelnde Kommunikation oder Zusammenarbeit zwischen Entwicklerteam und Product Owner, oder innerhalb des Entwicklerteams.</li>
-<li>Am Ende des Sprints findet das <a href="/articles/sprint_review.html">Sprint Review</a> statt. Die vom Entwicklerteam erbrachte Arbeit wird dem Product Owner in der Form des neuen Produktinkrements präsentiert.</li>
-<li>Auch das <a href="/articles/sprint_retrospective.html">Sprint Retrospective</a> findet am Ende des Sprints statt. In ihm betrachtet das Team den vergangen Sprint und bespricht, was gut oder schlecht gelaufen ist und was beim nächsten mal verbessert werden könnte.</li>
+<li>An jedem Werktag findet das <a href="articles/daily_scrum.html">Daily Scrum</a> statt, ein höchstens 15 Minuten langes Meeting, in dem die Mitglieder des Teams besprechen, woran sie seit dem letzten Tag gearbeitet haben, welche Probleme es gibt, und was sie an diesem Tag bearbeiten werden.</li>
+<li>Der <a href="articles/scrum_master.html">Scrum Master</a> arbeitet mit dem Entwicklungsteam zusammen, und ist dafür verantwortlich, dass der Scrum-Prozess reibungsfrei gelingt. Dazu überwacht er die Einhaltung der Regeln und beseitigt Probleme, wie mangelnde Kommunikation oder Zusammenarbeit zwischen Entwicklerteam und Product Owner, oder innerhalb des Entwicklerteams.</li>
+<li>Am Ende des Sprints findet das <a href="articles/sprint_review.html">Sprint Review</a> statt. Die vom Entwicklerteam erbrachte Arbeit wird dem Product Owner in der Form des neuen Produktinkrements präsentiert.</li>
+<li>Auch das <a href="articles/sprint_retrospective.html">Sprint Retrospective</a> findet am Ende des Sprints statt. In ihm betrachtet das Team den vergangen Sprint und bespricht, was gut oder schlecht gelaufen ist und was beim nächsten mal verbessert werden könnte.</li>
 </ul>
 <p>Nun beginnt der gesamte Prozess von vorne. In folgendem Schaubild ist er noch einmal übersichtlich dargestellt:</p>
-<p><img id="ablaufbild" alt="Scrum Ablauf" src="/images/ablauf.jpg"></p>
+<p><img id="ablaufbild" alt="Scrum Ablauf" src="images/ablauf.jpg"></p>
 <h2 id="quellen">Quellen</h2>
 <ol>
 <li><a href="https://de.wikipedia.org/wiki/Scrum">Wikipedia - Scrum</a></li>
@@ -90,7 +90,7 @@ Die Regeln des SCRUM sind übersichtlich und recht simpel gehalten, um bei der U
 </ol>
 
 			<div class="categories">
-				<a href="/special/übersicht.html">Kategorien</a>: <a href="/special/übersicht.html#besondereSeiten">Besondere Seiten</a>
+				<a href="special/übersicht.html">Kategorien</a>: <a href="special/übersicht.html#besondereSeiten">Besondere Seiten</a>
 
 			</div>
 		</main>
